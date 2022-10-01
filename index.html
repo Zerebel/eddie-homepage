@@ -1,10 +1,438 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eddie Homepage</title>
+    <link
+      rel="shortcut icon"
+      href="assets/img/devchallenges.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/style/output.css" />
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="mx-2 md:mx-3 lg:mx-8">
+      <header class="w-full mt-4 lg:mt-8 md:mt-6">
+        <nav class="flex items-center justify-between relative">
+          <p
+            class="font-heebo font-extrabold text-2xl leading-9 md:text-3xl lg:text-4xl lg:leading-10 text-Gray1"
+          >
+            Edie
+          </p>
+          <ul
+            class="md:flex hidden gap-4 md:gap-6 lg:gap-8 font-poppins font-medium md:text-lg lg:text-xl bg-sky-300 md:bg-white text-Gray1 md:text-black rounded-tr-md absolute md:relative flex-col md:flex-row top-8 right-6 md:top-0 px-6 md:px-0 py-4 md:py-0 tracking-widest"
+            id="mobile-menu"
+          >
+            <li class="text-white md:text-Blue"><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Our Works</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <button class="md:hidden" id="btnMenu">
+            <img src="assets/img/menu.svg" alt="menu" id="menuIcon" />
+          </button>
+        </nav>
+      </header>
+      <main class="mt-12 md:mt-24">
+        <!-- Article 1 -->
+        <article class="px-8 md:px-28 lg:px-64">
+          <span
+            class="font-poppins font-medium text-xs leading-4 md:text-base lg:text-lg text-Blue"
+          >
+            Unhappy with your website?
+          </span>
+          <h1
+            class="font-poppins font-medium text-2xl text-Gray1 leading-9 md:text-3xl lg:text-5xl md:leading-10 lg:leading-[4.5rem] mt-2"
+          >
+            <p>We create beautiful</p>
+            <p>and fast web services</p>
+          </h1>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="w-full my-4 md:my-6 lg:my-8">
+          <img
+            src="assets/img/heroImage.jpg"
+            alt=""
+            class="rounded-2xl min-h-[8rem] md:min-h-0 min-w-[21rem] md:min-w-0"
+          />
+        </article>
+
+        <!-- Article 3 -->
+        <article class="px-8 md:px-28 lg:px-64">
+          <div
+            class="text-Gray1 font-poppins font-medium text-2xl leading-9 md:text-3xl lg:text-5xl md:leading-10 lg:leading-[4.5rem]"
+          >
+            <p>Story, emotion</p>
+            <p>and purpose</p>
+            <div class="md:max-w-xs py-2">
+              <p
+                class="font-normal text-xs md:text-base lg:text-lg leading-4 md:leading-6 my-4 md:my-6"
+              >
+                We help transform your ideas into real world applications that
+                will outperform your toughest competition and help you achieve
+                your strategic goals in short period of time.
+              </p>
+              <p
+                class="text-[0.625rem] font-medium leading-4 md:text-sm md:leading-5"
+              >
+                Want us to contact you?
+              </p>
+              <!-- Button -->
+              <div
+                class="flex font-medium text-sm leading-5 md:text-base lg:text-lg mt-2 bg-Gray6 rounded-r-lg"
+              >
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  class="w-full rounded-l-md pl-2 placeholder:text-Gray4 text-slate-400 focus:outline-none"
+                />
+                <button
+                  class="text-sm leading-5 font-medium md:text-base md:leading-6 lg:text-lg lg:leading-7 text-Gray6 bg-Blue py-2 px-4 rounded-lg"
+                >
+                  Join
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="mt-8 md:mt-10 lg:mt-12 px-5 md:px-20 lg:px-44">
+          <div class="font-medium text-2xl leading-9 md:leading-10 text-Gray1">
+            <p>We offer high</p>
+            <p>demand services</p>
+          </div>
+          <!-- Devs -->
+          <div
+            class="grid md:grid-cols-3 lg:gap-16 2xl:gap-32 place-items-center mt-12 md:mt-16"
+          >
+            <div
+              class="flex flex-col justify-center items-start gap-4 px-3 py-5 w-3/4 md:w-full"
+            >
+              <div class="bg-Blue rounded-lg p-1 w-fit">
+                <img src="assets/img/edit.svg" alt="code" class="w-6 md:w-8" />
+              </div>
+              <h3
+                class="font-semibold text-xl md:font-bold md:text-2xl leading-9 text-Gray1"
+              >
+                UI/UX Design
+              </h3>
+              <p class="font-normal text-base leading-6 text-Gray2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <button
+                class="bg-Gray5 text-base font-medium leading-6 text-Gray3 py-1 px-2 rounded-lg focus:outline-none"
+              >
+                Get started
+              </button>
+            </div>
+            <!-- green -->
+            <div
+              class="flex flex-col justify-center items-start gap-4 shadow-CustomShadow px-3 py-5 w-3/4 md:w-full"
+            >
+              <div class="bg-Green rounded-lg p-1 w-fit">
+                <img src="assets/img/code.svg" alt="code" class="w-6 md:w-8" />
+              </div>
+              <h3
+                class="font-semibold text-xl md:font-bold md:text-2xl leading-9 text-Gray1"
+              >
+                Front End
+              </h3>
+              <p class="font-normal text-base leading-6 text-Gray2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <button
+                class="bg-Blue text-base font-medium leading-6 text-white py-1 px-2 rounded-lg focus:outline-none"
+              >
+                Get started
+              </button>
+            </div>
+            <!-- flamingo -->
+            <div
+              class="flex flex-col justify-center items-start gap-4 px-3 py-5 w-3/4 md:w-full"
+            >
+              <div class="bg-Flamingo rounded-lg p-1 w-fit">
+                <img
+                  src="assets/img/storage.svg"
+                  alt="code"
+                  class="w-6 md:w-8"
+                />
+              </div>
+              <h3
+                class="font-semibold text-xl md:font-bold md:text-2xl leading-9 text-Gray1"
+              >
+                Back End
+              </h3>
+              <p class="font-normal text-base leading-6 text-Gray2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <button
+                class="bg-Gray5 text-base font-medium leading-6 text-Gray3 py-1 px-2 rounded-lg focus:outline-none"
+              >
+                Get started
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="mt-8 md:mt-10 lg:mt-12 px-5 md:px-20 lg:px-44">
+          <div class="font-medium text-2xl leading-9 md:leading-10 text-Gray1">
+            <p>Good design means</p>
+            <p>good business</p>
+          </div>
+
+          <div class="my-4">
+            <!-- Image Group 1 -->
+            <div class="grid md:grid-cols-2 gap-8 md:gap-6">
+              <!-- image 1 -->
+              <div class="flex flex-col md:mt-16 lg:mt-28">
+                <img
+                  src="assets/img/smarthome.jpg"
+                  alt="smarthome"
+                  class="rounded-2xl"
+                />
+                <span
+                  class="font-light text-xs md:text-sm leading-5 text-Gray3 md:mb-1 mt-3"
+                >
+                  Full stack application
+                </span>
+                <p class="font-medium text-lg leading-7 md:text-2xl">
+                  Smart home dashboard
+                </p>
+              </div>
+
+              <!-- image 2 -->
+              <div class="flex flex-col">
+                <img
+                  src="assets/img/onboard.png"
+                  alt="onboard"
+                  class="rounded-2xl"
+                />
+                <span
+                  class="font-light text-xs md:text-sm leading-5 text-Gray3 md:mb-1 mt-3"
+                >
+                  UX/UI design
+                </span>
+                <p class="font-medium text-lg leading-7 md:text-2xl">
+                  Onboard application
+                </p>
+              </div>
+            </div>
+            <!-- Image Group 2 -->
+            <div class="grid md:grid-cols-2 gap-8 md:gap-6">
+              <!-- image 3 -->
+              <div class="flex flex-col mt-8 md:mt-16 lg:mt-28">
+                <img
+                  src="assets/img/booking.png"
+                  alt="smarthome"
+                  class="rounded-2xl"
+                />
+                <span
+                  class="font-light text-xs md:text-sm leading-5 text-Gray3 md:mb-1 mt-3"
+                >
+                  Mobile application
+                </span>
+                <p class="font-medium text-lg leading-7 md:text-2xl">
+                  Booking system
+                </p>
+              </div>
+
+              <!-- image 4 -->
+              <div class="flex flex-col">
+                <img
+                  src="assets/img/juice-product.png"
+                  alt="onboard"
+                  class="rounded-2xl"
+                />
+                <span
+                  class="font-light text-xs md:text-sm leading-5 text-Gray3 md:mb-1 mt-3"
+                >
+                  Front End application
+                </span>
+                <p class="font-medium text-lg leading-7 md:text-2xl">
+                  Juice product homepage
+                </p>
+              </div>
+            </div>
+            <!-- more -->
+            <div class="flex justify-start md:justify-end mt-4 md:mt-2">
+              <a
+                href="#"
+                class="text-Blue font-medium text-lg md:text-2xl leading-7 md:leading-9"
+                >see more &#8594;</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="mt-12 md:mt-28 lg:mt-40 px-5 md:px-20 lg:px-44">
+          <div class="grid md:grid-cols-[auto,1fr] lg:grid-cols-2 gap-4">
+            <!-- Description -->
+            <div class="flex flex-col md:self-center">
+              <h4 class="text-lg font-medium leading-7 text-Flamingo">
+                Meet the team
+              </h4>
+              <div class="text-Gray1 font-medium text-4xl leading-[3.375rem]">
+                <p>We are chilled</p>
+                <p>and a laidback</p>
+                <p>team</p>
+              </div>
+              <div class="text-Gray2 font-normal text-base leading-6">
+                <p>Lorem ipsum dolor sit amet,</p>
+                <p>consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <!-- Images -->
+            <div class="grid grid-cols-2 place-items-center gap-4">
+              <div>
+                <img
+                  src="assets/img/person3.png"
+                  alt="person3"
+                  class="rounded-2xl"
+                />
+              </div>
+              <div class="grid grid-rows-2 grid-cols-1">
+                <img
+                  src="assets/img/person1.png"
+                  alt="person1"
+                  class="rounded-2xl w-11/12"
+                />
+                <img
+                  src="assets/img/person2.png"
+                  alt="person2"
+                  class="rounded-2xl md:-mt-1"
+                />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 7 -->
+        <article class="mt-12 md:mt-24 lg:mt-32 px-5 md:px-20 lg:px-44">
+          <div class="font-medium text-2xl leading-9 md:text-3xl lg:text-4xl">
+            <p class="break-words lg:pr-2 text-Gray1">
+              “Fast and outstanding resutls. Edie understands their customer’s
+              needs.They have a young and talented team.”
+            </p>
+          </div>
+          <div class="inline-flex mt-10 gap-4 items-center">
+            <img
+              src="assets/img/person4.png"
+              alt="person4"
+              class="w-20 h-20 rounded-xl"
+            />
+            <div class="flex flex-col gap-3">
+              <p class="font-medium text-2xl leading-9 text-Gray1">
+                Carlos Tran
+              </p>
+              <p class="font-medium text-lg text-Gray3">The Decorate Gatsby</p>
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+    <footer class="bg-[#100E1D] w-full text-white mt-12 md:mt-24">
+      <div
+        class="flex md:justify-around justify-start flex-col md:flex-row px-8 md:pl-0 gap-14 pt-10"
+      >
+        <!-- Menu -->
+        <div class="flex md:justify-center">
+          <ul class="text-white font-normal text-lg leading-9">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Our Works</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Social Links -->
+        <div class="flex flex-col">
+          <p class="font-heebo font-extrabold text-4xl leading-10">Edie</p>
+          <ul class="flex gap-2">
+            <li>
+              <a href="#"
+                ><img
+                  src="assets/img/instagram.svg"
+                  alt="instagram"
+                  class="w-6 h-6"
+              /></a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="assets/img/linkedin.svg"
+                  alt="linkedin"
+                  class="w-6 h-6"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="assets/img/twitter.svg"
+                  alt="twitter"
+                  class="w-6 h-6"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div>
+          <p
+            class="text-[0.625rem] font-medium leading-4 md:text-sm md:leading-5"
+          >
+            Want us to contact you?
+          </p>
+          <!-- Button -->
+          <div
+            class="flex font-medium text-xs leading-5 md:text-sm lg:text-base mt-2 bg-Gray6 rounded-lg pr-1 py-1"
+          >
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              class="w-full rounded-l-md pl-2 placeholder:text-Gray4 text-slate-400 focus:outline-none"
+            />
+            <button
+              class="text-xs leading-5 font-medium md:text-sm md:leading-6 lg:text-base lg:leading-7 text-Gray6 bg-Blue py-1 px-3 rounded-lg"
+            >
+              Join
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Creator -->
+      <p
+        class="font-montserrat text-sm font-medium text-Gray6 text-center mt-32"
+      >
+        created by
+        <a href="https://github.com/Zerebel" class="font-semibold">Zerebel</a> -
+        devChallenges.io
+      </p>
+    </footer>
+    <script src="assets/js/index.js"></script>
+  </body>
 </html>
